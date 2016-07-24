@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		CSS Gradiant		
+	</title>
+	<style>
+		.container {
+			display: flex;
+			justify-content:center;
+		}
+		.gradiant1, .gradiant2, .gradiant3 {
+			width: 75px;
+			height: 75px;
+			line-height: 100px;
+			text-align: center;
+			margin: 5px;
+			border-radius: 5px;
+		}
+		.gradiant1 {			
+			background: linear-gradient(to right, red, green);
+		}
+		.gradiant2 {			
+			background: radial-gradient(circle at 50% -10%,  red, yellow, green);
+		}
+		.gradiant3 {			
+			background: radial-gradient(ellipse farthest-side at 40px 10px , red 0%, yellow 65%, green 98%);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="gradiant1">
+			Box
+		</div>
+		<div class="gradiant2">
+			Box
+		</div>
+		<div class="gradiant3">
+			Box
+		</div>
+	</div>
+</body>
+</html>
